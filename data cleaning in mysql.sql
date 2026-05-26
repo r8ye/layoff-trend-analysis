@@ -75,7 +75,7 @@ FROM layoffs_staging2
 WHERE row_num > 1;
 
 
--- standardizing the date
+-- standardizing the data
 SELECT DISTINCT company
 FROM layoffs_staging2;
 
@@ -183,7 +183,7 @@ FROM layoffs_staging2
 ORDER BY industry;
 
 
--- deleting unecessary date
+-- deleting unecessary data
 SELECT *
 FROM layoffs_staging2
 WHERE total_laid_off IS NULL
